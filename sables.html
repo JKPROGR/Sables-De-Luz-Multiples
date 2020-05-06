@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>STAR WARS</h1>
+<div class="contenedor " id="cont1">
+    <img src="brazo.png " id="img1" alt="">
+    <div class="sable box-red" id="sable1"></div>
+    <div class="sable2 luz-red" id="sable2"></div>
+    <div class="sable3 luz-red" id="sable3"></div>
+</div>
+
+<div class="contenedor " id="cont2">
+    <img src="brazo.png " id="img2" alt="">
+    <div class="sable luz-blue" id="sable4"></div>
+    <div class="sable2 luz-blue" id="sable5"></div>
+    <div class="sable3 luz-blue" id="sable6"></div>
+</div>
+
+<div class="contenedor " id="cont3">
+    <img src="brazo.png " id="img3" alt="">
+    <div class="sable luz-green" id="sable7"></div>
+    <div class="sable2 luz-green" id="sable8"></div>
+    <div class="sable3 luz-green" id="sable9"></div>
+</div>
+
+<script>    
+
+const img1=document.getElementById('img1'),
+sable1= document.getElementById('sable1'),
+sable2= document.getElementById('sable2'),
+sable3 = document.getElementById('sable3')
+sable4= document.getElementById('sable4'),
+sable5= document.getElementById('sable5'),
+sable6 = document.getElementById('sable6')
+sable7= document.getElementById('sable7'),
+sable8= document.getElementById('sable8'),
+sable9 = document.getElementById('sable9'),
+cont1=document.getElementById('cont1'),
+cont2=document.getElementById('cont2'),
+cont3=document.getElementById('cont3')
+
+   img1.addEventListener('click',()=>{
+
+    sable1.classList.toggle('efecto')
+    sable2.classList.toggle('efecto')
+    sable3.classList.toggle('efecto')
+    cont1.classList.toggle('mover')
+   })
+
+   img2.addEventListener('click',()=>{
+
+sable4.classList.toggle('efecto')
+sable5.classList.toggle('efecto')
+sable6.classList.toggle('efecto')
+cont2.classList.toggle('mover')
+})
+
+img3.addEventListener('click',()=>{
+
+sable7.classList.toggle('efecto')
+sable8.classList.toggle('efecto')
+sable9.classList.toggle('efecto')
+cont3.classList.toggle('mover')
+})
+</script>
+  
+</body>
+</html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

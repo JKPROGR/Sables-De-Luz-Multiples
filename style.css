@@ -1,0 +1,251 @@
+  body{
+    background-color: #000;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items:flex-end;
+      height: 90vh;
+      width: 100%;
+      overflow: hidden;
+     /* background: url(fondo.jpg);*/
+      background-size: cover;
+      object-fit: cover;
+  }
+
+  h1{
+      font-size: 10em;
+      position: absolute;
+      -webkit-text-stroke: 2px yellow;
+      text-shadow: 0 0 5px yellow;
+      font-family: fantasy;
+      left: 1.5em;
+      top: -17px;
+      z-index: -1;
+      text-align: center;
+      letter-spacing: 20px;
+  }
+  
+  .contenedor{
+      height: 250px;
+      width: 250px;
+      position: relative;
+        margin: 0 70px;
+  }
+  img{
+      transform: rotate(-28deg);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+  }
+  .sable{
+      position: absolute;
+      z-index: -1;
+      height: 350px;
+      width: 15px;
+      background-color: #fff;
+      border-radius: 30px 30px 0 0;
+      top: -19.4em;
+      left: 4.6em;
+      transform: scale(0);
+      transition: .4s;
+      transform-origin: bottom;
+  }
+  .sable2{
+      height: 14px;
+      width: 50px;
+      transform: scale(0);
+      position: relative;
+      top: 34px;
+      background-color: #fff;
+      left: -9px;
+      border-radius:40% 0 0 40%;
+      transition: .4s;
+      transition-delay: .5s;
+      transform-origin: right;
+  }
+  .sable3{
+      transform: scale(0);
+      height: 14px;
+      width: 50px;
+      transition: .4s;
+      margin-top: 22px;
+      background-color: #fff;
+      margin-left: 118px;
+      transition-delay: .5s;
+      border-radius: 0 40% 40% 0;
+      transform-origin: left;
+  }
+  
+  .box-red{
+        box-shadow: 0 0 15px red,
+        0 0 20px rgb(245, 29, 29),
+        0 0 30px rgb(223, 35, 35),
+        0 0 40px rgb(233, 49, 49);
+    }
+    .luz-red{
+         box-shadow: 0 0 5px red,
+        0 0 10px rgb(223, 35, 35),
+        0 0 20px rgb(233, 49, 49),
+        0 0 25px rgb(233, 49, 49);
+    }
+    .luz-blue{
+            box-shadow: 0 0 5px rgb(7, 7, 185),
+           0 0 10px rgb(7, 7, 185),
+           0 0 20px rgb(7, 7, 185),
+           0 0 30px rgb(7, 7, 185),
+           0 0 25px rgb(7, 7, 185);
+    }
+    .luz-green{
+        box-shadow: 0 0 5px rgb(63, 199, 10),
+       0 0 10px rgb(63, 199, 10),
+       0 0 20px rgb(63, 199, 10),
+       0 0 25px rgb(63, 199, 10);
+    }
+
+    /**clase que agregaremos con javascript**/
+
+.efecto{
+    transform: scale(1);
+}
+
+.mover{
+    animation: mover 2s infinite linear alternate;
+    animation-delay: .7s;
+}
+
+@keyframes mover{
+    /*0%{
+        transform: rotate(0deg);
+    }*/
+    50%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*body{
+        cursor: pointer;
+        background-color: #000;
+    }
+     h1{
+        font-size: 10em;
+        position: absolute;
+        -webkit-text-stroke: 2px yellow;
+        font-family: fantasy;
+        left: 1.3em;
+        top: -17px;
+        z-index: -1;
+        text-shadow: 0 0 5px yellow;
+    }
+    .cont-img{
+        height: 250px;
+        width: 250px;
+        margin: 25em 35em;
+        position: relative;
+    }
+    
+
+     img{
+        transform:rotate(-28deg);
+        height:100%;
+        width:100%;
+        position: absolute;
+    }
+    .sable{
+        position: absolute;
+        height: 350px;
+        width: 15px;
+        background: #fff;
+        border-radius: 5px 5px 0 0;
+        top: -19.4em;
+        left: 4.6em;
+        transform:scale(0);
+        z-index: -1;
+        transition:.4s;
+        transform-origin: bottom;
+    }
+
+    .sable2{
+         transform:scale(0);
+        height: 14px;
+        width: 50px;
+        position: relative;
+        top: 34px;
+        background-color: #fff;
+        left: -9px;
+        border-radius: 5px 0 0 5px;
+        transition: .4s;
+        transition-delay: .5s;
+        transform-origin: right;
+    }
+    .sable3{
+        transform:scale(0);
+        height: 14px;
+        width: 50px;
+        transition: .4s;
+        margin-top: 22px;
+        background-color: #fff;
+        margin-left: 118px;
+        transition-delay: .5s;
+        border-radius: 0 5px 5px 0;
+        transform-origin:left;
+    }
+    .box-red{
+        box-shadow: 0 0 15px red,
+        0 0 23px rgb(245, 29, 29),
+        0 0 33px rgb(223, 35, 35),
+        0 0 43px rgb(233, 49, 49);
+    }
+    .luz-red{
+         box-shadow: 0 0 5px red,
+        0 0 10px rgb(223, 35, 35),
+        0 0 20px rgb(233, 49, 49);
+    }
+    
+
+     .efecto{
+        transform: scale(1);  
+    }*/
