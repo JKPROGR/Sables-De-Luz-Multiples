@@ -1,11 +1,9 @@
-  body{
+
+  
+    body{
     background-color: #000;
       cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items:flex-end;
-      height: 90vh;
-      width: 100%;
+     
       overflow: hidden;
      /* background: url(fondo.jpg);*/
       background-size: cover;
@@ -13,28 +11,36 @@
   }
 
   h1{
-      font-size: 10em;
+      font-size: 3em;
       position: absolute;
       -webkit-text-stroke: 2px yellow;
       text-shadow: 0 0 5px yellow;
       font-family: fantasy;
-      left: 1.5em;
+      left: 5em;
       top: -17px;
       z-index: -1;
       text-align: center;
       letter-spacing: 20px;
   }
-  
+.contenedor-principal{
+  height:500px;
+  width:100%;
+   display: flex;
+      justify-content: center;
+      align-items:flex-end;
+    margin-top:-50px
+}
   .contenedor{
       height: 250px;
       width: 250px;
       position: relative;
-        margin: 0 70px;
+    transform:scale(.6)
   }
   img{
       transform: rotate(-28deg);
       height: 100%;
       width: 100%;
+   object-fit: cover;
       position: absolute;
   }
   .sable{
@@ -112,22 +118,27 @@
     animation: mover 2s infinite linear alternate;
     animation-delay: .7s;
 }
-
 @keyframes mover{
     /*0%{
         transform: rotate(0deg);
     }*/
     50%{
-        transform: rotate(40deg);
+        transform:scale(.6) rotate(40deg);
+    
     }
     100%{
-        transform: rotate(-40deg);
+        transform:scale(.6) rotate(-40deg);
+  
     }
 }
-  
-  
-  
-  
+
+p{
+  margin-top:-30px;
+  text-align:center;
+  color:#fff;
+  font-size:2em;
+  font-family:sans-serif;
+}
   
   
   
